@@ -16,15 +16,12 @@
 #include "main.h"
 
 
-
-
 struct CPUTIMER_VARS *Timer;
 
 extern Uint16 RamfuncsLoadStart;
 extern Uint16 RamfuncsLoadEnd;
 extern Uint16 RamfuncsRunStart;
 extern Uint16 RamfuncsLoadSize;
-
 
 // These are defined by the linker file and used to copy the CLA code from its load address to its run address in CLA program memory
 extern Uint16 Cla1funcsLoadStart;
@@ -33,24 +30,17 @@ extern Uint16 Cla1funcsLoadSize;
 extern Uint16 Cla1funcsRunStart;
 extern Uint16 Cla1Prog_Start;
 
-
 // These are defined by the linker file and used to copy the CLA math tables from its load address to its run address into one of the CLA data RAMs
 extern Uint16 Cla1mathTablesLoadStart;
 extern Uint16 Cla1mathTablesLoadEnd;
 extern Uint16 Cla1mathTablesLoadSize;
 extern Uint16 Cla1mathTablesRunStart;
 
-//unsigned int Vin[300];
-//unsigned int HsinkTemp[300];
-//unsigned int Current_Out[300];
-
 unsigned int ArrayA;
 unsigned int ArrayB;
 unsigned int ArrayC;
 
-
 float PID1outArray[2000];
-
 
 
 void main(void)
